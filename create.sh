@@ -1,8 +1,8 @@
 #!/bin/bash
 mkdir -p "~/.mozilla/firefox"
 for i in {1..30}; do
-  PROFILE_NAME="$i"
-  PROFILE_DIR="$HOME/.mozilla/firefox/${PROFILE_NAME}"
+  PROFILE_NAME="Profile$i"
+  PROFILE_DIR="$HOME/.mozilla/firefox/${PROFILE_NAME}.default"
 
   # Create profile directory
   mkdir -p "$PROFILE_DIR"
