@@ -1,16 +1,17 @@
 #!/bin/bash
-mkdir -p "~/.mozilla/firefox"
+
 for i in {1..30}; do
   PROFILE_NAME="Profile$i"
-  PROFILE_DIR="$HOME/.mozilla/firefox/${PROFILE_NAME}.default"
+  PROFILE_DIR="$HOME/.mozilla/firefox/${PROFILE_NAME}"
 
   # Create profile directory
   mkdir -p "$PROFILE_DIR"
 
   # Generate a random profile ID
 
+
   # Create profiles.ini entry
-  echo "[$i]" >> ~/.mozilla/firefox/profiles.ini
+  echo "[Profile$i]" >> ~/.mozilla/firefox/profiles.ini
   echo "Name=$PROFILE_NAME" >> ~/.mozilla/firefox/profiles.ini
   echo "IsRelative=1" >> ~/.mozilla/firefox/profiles.ini
   echo "Path=${PROFILE_NAME}" >> ~/.mozilla/firefox/profiles.ini
