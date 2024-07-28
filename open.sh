@@ -1,6 +1,6 @@
 #!/bin/bash
-START_INDEX=3
-END_INDEX=30
+START_INDEX=2
+END_INDEX=20
 
 for i in $(seq $START_INDEX $END_INDEX); do
    firefox -p Profile$i &>/dev/null &
